@@ -125,3 +125,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
 VENV_PATH = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
 MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
+
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'asif018600@gmail.com'
+EMAIL_HOST_PASSWORD = 'your_password'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
